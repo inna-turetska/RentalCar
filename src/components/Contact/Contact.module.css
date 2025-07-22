@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  background-color: #ecb0dd;
+  border-radius: 8px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.p {
+  color: #221336;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.input {
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 150px;
+}
+.input:focus {
+  outline: none;
+  border-color: #50023b;
+}
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button {
+  font-size: 18px;
+  padding: 8px 16px;
+  background-color: #bf5ea5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #c03f9e;
+}
+.person {
+  display: flex;
+  flex-direction: column;
+}

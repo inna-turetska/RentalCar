@@ -1,0 +1,40 @@
+.description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #3b2559;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3b2559;
+  margin-bottom: 10px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+ul li {
+  font-size: 1rem;
+  color: #3b2559;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #8f76b1;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+}
