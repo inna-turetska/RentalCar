@@ -1,12 +1,40 @@
-# React + Vite
+# 🚗 RentalCar – сервіс оренди автомобілів
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🔍 Опис
 
-Currently, two official plugins are available:
+**RentalCar** — це сучасний веб-додаток, створений для компанії, що займається орендою автомобілів. Додаток дозволяє користувачам переглядати каталог авто, фільтрувати за параметрами, переглядати деталі, додавати авто до обраних і бронювати їх через інтерактивну форму.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Живий демо
 
-## Expanding the ESLint configuration
+➡️ [Перейти до сайту](https://your-project-url.vercel.app)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Технології
+
+- **React** з бандлером **Vite**
+- **React Router** – маршрутизація
+- **Redux Toolkit** – глобальний стан
+- **Axios** – робота з API
+- **React DatePicker** – вибір дати
+
+## 🗂 Сторінки
+
+- `/` — **Головна**: банер із кнопкою переходу в каталог.
+- `/catalog` — **Каталог**: список авто з фільтрами.
+- `/catalog/:id` — **Деталі авто**: докладна інформація та форма оренди.
+
+## 📋 Основні функції
+
+- Перегляд **каталогу автомобілів**
+- **Фільтрація** по бренду, ціні, пробігу (від / до)
+- **Обране** – збереження авто навіть після оновлення сторінки
+- **Пагінація** – кнопка “Load More” довантажує нові результати
+- **Форма бронювання** з валідацією та нотифікацією
+- Пробіг авто відображається у форматі: `5 000 km`
+
+Проєкт використовує готовий бекенд API, опис якого доступний за посиланням:
+📚 https://car-rental-api.goit.global/api-docs/
+
+Автор
+Розроблено [Inna Turetska]
+📧 Email: innaturetska1987@gmail.com
+💼 GitHub: https://github.com/inna-turetska

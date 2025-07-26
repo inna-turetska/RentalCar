@@ -3,12 +3,12 @@ import css from "./CarDetails.module.css";
 // Мікрокомпонент для рендерингу пунктів з іконкою
 function DetailItem({ icon, text }) {
   return (
-    <li className={css.listItem}>
+    <div className={css.listItem}>
       <svg className={css.icon} width="16" height="16">
         <use href={`/svg/sprite.svg#${icon}`} />
       </svg>
       <p>{text}</p>
-    </li>
+    </div>
   );
 }
 
