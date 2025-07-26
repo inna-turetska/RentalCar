@@ -1,11 +1,12 @@
-import AppBar from "../AppBar/AppBar";
-import styles from "./Layout.module.css";
+import css from "./Layou.module.css";
+import { Suspense } from "react";
 
-export default function Layout({ children }) {
+export const Layout = ({ children }) => {
   return (
-    <div className={styles.container}>
-      <AppBar />
-      {children}
+    <div className={css.layout}>
+      <main className={css.container}>
+        <Suspense fallback={null}>{children}</Suspense>
+      </main>
     </div>
   );
-}
+};

@@ -1,0 +1,14 @@
+.container {
+  margin: 0 auto;
+  background: var(--white);
+  padding: 0 120px;
+}
+.price {
+  display: flex;
+  gap: 0;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}

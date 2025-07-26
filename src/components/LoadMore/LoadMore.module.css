@@ -1,0 +1,11 @@
+.buttonLoad {
+  color: var(--main);
+  border: 1px solid var(--button);
+  background-color: transparent;
+  display: block;
+  margin: 0 auto;
+}
+
+.buttonLoad:hover {
+  border: 1px solid var(--button-hover);
+}

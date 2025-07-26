@@ -5,7 +5,7 @@ import App from "./App.jsx";
 import { PersistGate } from "redux-persist/integration/react";
 import { Provider } from "react-redux";
 import { store, persistor } from "./redux/store";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 
 import { BrowserRouter } from "react-router-dom";
 

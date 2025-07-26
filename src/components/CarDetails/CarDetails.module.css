@@ -1,0 +1,60 @@
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.descriptionContainer {
+  margin-top: 68px;
+  display: flex;
+  flex-direction: column;
+  gap: 110px;
+}
+
+.descriptionTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+.adress {
+  display: flex;
+  gap: 16px;
+}
+.carId {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--gray);
+}
+.listItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.left {
+  flex: 0 1 35%;
+  max-width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right {
+  flex: 0 1 65%;
+  max-width: 65%;
+  justify-content: stretch;
+}
+
+.price {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--button);
+  margin-top: 16px;
+  margin-bottom: 32px;
+}

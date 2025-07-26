@@ -2,12 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 0;
-  margin-bottom: 20px;
+  padding: 24px 120px;
+  background-color: var(--badges);
 }
-li {
-  list-style: none;
-}
+
 .nav {
   padding: 10px 20px;
 }
@@ -16,27 +14,30 @@ li {
   align-items: center;
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 32px;
   padding: 0;
   margin: 0;
-  color: #3b2559;
+  justify-content: end;
 }
 
 .link {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1em;
-  padding: 5px 10px;
-  border-radius: 4px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+
+  color: var(--main);
   transition: background-color 0.3s, color 0.3s;
 }
 
 .link:hover {
-  background-color: #6b4a8c;
-  color: #fff;
+  color: var(--button-hover);
 }
 
 .active {
-  background-color: #6b4a8c;
+  color: var(--button-hover);
+}
+.logo {
+  width: 104px;
+  height: 16px;
 }

@@ -1,4 +1,4 @@
-import { configureStore } from "@reduxjs/toolkit";
+import storage from "redux-persist/lib/storage"; 
 import {
   persistStore,
   persistReducer,
@@ -9,25 +9,25 @@ import {
   PURGE,
   REGISTER,
 } from "redux-persist";
-import storage from "redux-persist/lib/storage";
-import contactReducer from "./contacts/slice";
-import filterReducer from "./filters/slice";
-import authReducer from "./auth/slice";
+import { configureStore } from "@reduxjs/toolkit";
 
-const persistedAuthReducer = persistReducer(
-  {
-    key: "user-token",
-    storage,
-    whitelist: ["token"],
-  },
-  authReducer
+import carsReducer from "./cars/slice";
+import filtersReducer from "./filters/slice";
+
+const filtersPersistConfig = {
+  key: "filters",
+  storage,
+};
+
+const persistedFiltersReducer = persistReducer(
+  filtersPersistConfig,
+  filtersReducer
 );
 
 export const store = configureStore({
   reducer: {
-    contacts: contactReducer,
-    filters: filterReducer,
-    auth: persistedAuthReducer,
+    cars: carsReducer, 
+    filters: persistedFiltersReducer, 
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
@@ -36,4 +36,5 @@ export const store = configureStore({
       },
     }),
 });
+
 export const persistor = persistStore(store);

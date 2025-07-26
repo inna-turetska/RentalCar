@@ -1,0 +1,83 @@
+.list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+.item {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card {
+  border: none;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  align-items: stretch;
+}
+.imageWrapper {
+  position: relative;
+  flex-shrink: 0; /* чтобы картинка не сжималась */
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--main);
+}
+.model {
+  color: var(--button);
+}
+.price {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--main);
+}
+
+.details {
+  color: var(--gray);
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 28px;
+}
+
+.buttonFullWidth {
+  width: 100%;
+  margin-top: auto;
+}
+.favoriteButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
