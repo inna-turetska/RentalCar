@@ -28,6 +28,7 @@
   font-size: 16px;
   line-height: 125%;
   color: var(--gray);
+  margin-left: 16px;
 }
 .listItem {
   display: flex;

@@ -20,7 +20,7 @@ export default function CarDetails({ car }) {
     <div className={css.right}>
       <h2 className={css.title}>
         {car.brand} {car.model}, {car.year}{" "}
-        <span className={css.carId}>ID: {car.id}</span>
+        <span className={css.carId}>ID: {car.id.slice(0, 4)}</span>
       </h2>
 
       {/* Адреса та пробіг */}
