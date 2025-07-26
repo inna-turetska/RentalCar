@@ -1,7 +1,7 @@
 .container {
   margin: 0 auto;
   background: var(--white);
-  padding: 0 120px;
+  padding: 84px 120px 124px 120px;
 }
 .price {
   display: flex;

@@ -2,8 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 56px;
-  padding-top: 84px;
+  margin-bottom: 56px;
 }
 .form {
   display: flex;
@@ -16,7 +15,7 @@
 .field {
   display: flex;
   flex-direction: column;
-  width: fit-content; 
+  width: fit-content;
   min-width: 196px;
 }
 
@@ -52,7 +51,6 @@
   background: var(--inputs);
 }
 
-
 .leftInput {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -60,7 +58,6 @@
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
-
 
 .rightInput {
   border-top-left-radius: 0;

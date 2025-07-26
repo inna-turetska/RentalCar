@@ -19,8 +19,11 @@ export default function CarCard({ car }) {
       <div className={css.info}>
         <div className={css.titleRow}>
           <h3 className={css.title}>
-            {car.brand} <span className={css.model}>{car.model}</span>,{" "}
-            {car.year}
+            {car.brand}{" "}
+            <span className={css.model}>
+              {car.model.split(" ").slice(0, 2).join(" ")}
+            </span>
+            , {car.year}
           </h3>
           <h3 className={css.price}>${car.rentalPrice}</h3>
         </div>
